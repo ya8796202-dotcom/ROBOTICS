@@ -2,7 +2,7 @@
   "name": "ROBOTICS",
   "short_name": "ROBOTICS",
   "start_url": "/ROBOTICS/index.html",
-  "scope": "/ROBOTICS/",
+  "/scope": "/ROBOTICS/",
   "display": "standalone",
   "background_color": "#0f1020",
   "theme_color": "#6C5CE7",
