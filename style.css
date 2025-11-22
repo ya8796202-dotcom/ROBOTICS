@@ -41,3 +41,25 @@ a{color:inherit;text-decoration:none}
 .contact-form input,.contact-form textarea{background:#171739;color:#fff;border:1px solid #2a2a50;border-radius:12px;padding:10px}
 .footer{padding:18px;text-align:center;color:var(--muted);border-top:1px solid #2a2a50;background:#11122a}
 @media(max-width:900px){.hero{grid-template-columns:1fr;min-height:auto}.nav{display:none}}
+
+
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.video-card {
+  background: var(--card);
+  border: 1px solid #2a2a50;
+  border-radius: 16px;
+  padding: 12px;
+  text-align: center;
+}
+
+.video-card video {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
