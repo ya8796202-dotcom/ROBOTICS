@@ -63,3 +63,52 @@ a{color:inherit;text-decoration:none}
   border-radius: 12px;
   margin-bottom: 8px;
 }
+
+
+.my-photo {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #6C5CE7;
+  margin-top: 20px;
+  opacity: 0; /* يبدأ مخفي */
+  animation: pulse-border 2.5s infinite,
+             fadeInUp 1.2s ease-out forwards,
+             floatAnim 6s ease-in-out infinite,
+             slowRotate 20s linear infinite;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* نبض */
+@keyframes pulse-border {
+  0% { box-shadow: 0 0 0 0 rgba(108,92,231,0.7); }
+  70% { box-shadow: 0 0 0 25px rgba(108,92,231,0); }
+  100% { box-shadow: 0 0 0 0 rgba(108,92,231,0); }
+}
+
+/* دخول تدريجي */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* عائم */
+@keyframes floatAnim {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+/* دوران بطيء */
+@keyframes slowRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* عند المرور بالماوس */
+.my-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(108,92,231,0.9),
+              0 0 50px rgba(0,198,255,0.6);
+}
