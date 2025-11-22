@@ -1,0 +1,14 @@
+{
+  "name": "ROBOTICS",
+  "short_name": "ROBOTICS",
+  "start_url": "/ROBOTICS/index.html",
+  "scope": "/ROBOTICS/",
+  "display": "standalone",
+  "background_color": "#0f1020",
+  "theme_color": "#6C5CE7",
+  "description": "موقع روبوتات احترافي قابل للتثبيت كـ PWA، مع أقسام متعددة ومعرض.",
+  "icons": [
+    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
