@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ROBOTICS | روبوتات</title>
+  <meta name="description" content="موقع روبوتات احترافي قابل للتثبيت كـ PWA، يشرح الآلية والصنع مع أقسام متعددة ومعرض." />
+  <link rel="manifest" href="./manifest.json" />
+  <meta name="theme-color" content="#6C5CE7" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="app-bar">
+    <div class="brand">ROBOTICS</div>
+    <nav class="nav">
+      <a href="#hero">الرئيسية</a>
+      <a href="#how-it-works">كيف يعمل الروبوت</a>
+      <a href="#build">كيف تصنع روبوتًا</a>
+      <a href="#gallery">معرض</a>
+      <a href="#articles">مقالات</a>
+      <a href="#faq">أسئلة</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+    <button id="installBtn" class="install-btn">📲 تثبيت التطبيق</button>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1 class="gradient-text">ROBOTICS | روبوتات</h1>
+      <p>اكتشف آلية عمل الروبوتات وكيفية صنعها، مع أمثلة عملية ومحتوى بصري غني.</p>
+      <div class="hero-actions">
+        <a href="#build" class="btn primary">ابدأ البناء</a>
+        <a href="#how-it-works" class="btn ghost">فهم الآلية</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="robot-anim">
+        <div class="head"></div><div class="body"></div>
+        <div class="arm left"></div><div class="arm right"></div>
+        <div class="wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="section">
+    <h2>كيف يعمل الروبوت؟</h2>
+    <div class="cards">
+      <div class="card"><h3>الاستشعار</h3><p>حساسات تلتقط البيئة.</p></div>
+      <div class="card"><h3>المعالجة</h3><p>وحدة تحكم تفسّر البيانات.</p></div>
+      <div class="card"><h3>التنفيذ</h3><p>محركات ومشغلات للحركة.</p></div>
+      <div class="card"><h3>الاتصال</h3><p>BT/Wi‑Fi للتحكم والتحديث.</p></div>
+    </div>
+  </section>
+
+  <section id="build" class="section alt">
+    <h2>كيف تصنع روبوتًا؟</h2>
+    <ol class="steps">
+      <li><span class="step-title">حدد الهدف</span><span class="step-desc">مشروع واضح.</span></li>
+      <li><span class="step-title">اختر الهيكل</span><span class="step-desc">مواد مناسبة.</span></li>
+      <li><span class="step-title">وحدة التحكم</span><span class="step-desc">Arduino/ESP32.</span></li>
+      <li><span class="step-title">الحساسات والمحركات</span><span class="step-desc">حسب الوظيفة.</span></li>
+      <li><span class="step-title">البرمجة</span><span class="step-desc">خوارزميات التحكم.</span></li>
+      <li><span class="step-title">الاختبار</span><span class="step-desc">تحسين تدريجي.</span></li>
+    </ol>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>معرض الصور</h2>
+    <div class="gallery">
+      <img src="./assets/robot1.jpg" alt="Robot 1" />
+      <img src="./assets/robot2.jpg" alt="Robot 2" />
+      <img src="./assets/robot3.jpg" alt="Robot 3" />
+      <img src="./assets/robot4.jpg" alt="Robot 4" />
+    </div>
+  </section>
+
+  <section id="articles" class="section">
+    <h2>مقالات ودروس</h2>
+    <div class="cards articles">
+      <article class="card"><h3>مدخل إلى PID</h3><p>أساسيات عملية.</p></article>
+      <article class="card"><h3>اختيار المحركات</h3><p>مقارنة الاستخدامات.</p></article>
+      <article class="card"><h3>سلامة الطاقة</h3><p>حماية وتنظيم الجهد.</p></article>
+    </div>
+  </section>
+
+  <section id="faq" class="section alt">
+    <h2>أسئلة شائعة</h2>
+    <details><summary>هل أحتاج خبرة؟</summary><p>ابدأ بسهل وتدرج.</p></details>
+    <details><summary>أفضل لوحة للمبتدئ؟</summary><p>Arduino Uno خيار جيد.</p></details>
+    <details><summary>هل يمكن التحكم عن بعد؟</summary><p>نعم عبر BT/Wi‑Fi.</p></details>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>تواصل معنا</h2>
+    <form id="contactForm" class="contact-form">
+      <input type="text" name="name" placeholder="اسمك" required />
+      <input type="email" name="email" placeholder="بريدك" required />
+      <textarea name="message" placeholder="رسالتك" required></textarea>
+      <button type="submit" class="btn primary">إرسال</button>
+    </form>
+    <p class="note">البيانات تُحفظ محليًا على جهازك.</p>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 ROBOTICS — روبوتات للجميع</p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
